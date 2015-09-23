@@ -1,0 +1,174 @@
+/*! Building Interfaces HTML5 template */
+
+
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+h1 {
+    margin-bottom: -12px;
+    padding-top: 3px;
+}
+
+
+body {
+    background: orange;
+}
+
+
+.wrapper {
+    width: 1200px;
+      height: 120px;
+    background: beige;
+    margin: auto;   
+    font-size: 35px;
+      text-align: center;
+}
+
+.subtitulo {
+      margin-top: 1px;
+      
+}
+
+.CV {
+      
+      width: 600px;
+      background: beige;
+      margin-top: 50px;
+      margin-left: 120px;
+      padding: 20px; 
+      text-align: justify
+}
+
+
+
+.topPic {
+    box-shadow: 5px 5px 5px black;
+    width: 470px;
+      height: 320px;
+    float:right;
+margin-right: 124px;
+      margin-top: -650px;
+}
+.topPic2 {
+    box-shadow: 5px 5px 5px black;
+    width: 470px;
+      height: 320px;
+    float:right;
+margin-right: 124px;
+      margin-top: -290px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+a:link {
+ color: aqua;
+      text-decoration: none;
+}
+      
+      
+a:hover {
+    color: #FF00FF;
+      text-decoration: underline;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Mobile */
+@media only screen and (min-width: 480px) {}
+/* Intermediate */
+@media only screen and (min-width: 768px) {}
+/* Wide */
+@media only screen and (min-width: 1140px) {}
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
